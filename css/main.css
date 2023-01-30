@@ -414,4 +414,88 @@ body {
 
 /* End Target Widget */
 
+/* Start Tickets widget */
+.tickets .boxs {}
+
+.tickets .boxs .box {
+    width: calc(50% - 10px);
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.tickets .boxs .box i {
+    font-size: 26px;
+}
+
+@media(max-width:767px) {
+    .tickets .boxs .box {
+        width: 100%;
+    }
+}
+
+/* End Tickets widget */
+
+/* Start News Widget */
+
+.news .new-row:not(:last-of-type) {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+.news .new-row img {
+    width: 100px;
+    margin-right: 15px;
+    border-radius: 6px;
+}
+
+.news .new-row .info {
+    flex: 1;
+}
+
+.news .new-row .info h3 {
+    margin: 0 0 6px;
+    font-size: 16px;
+}
+
+@media(max-width:767px) {
+    .news .new-row {
+        display: block;
+    }
+
+    .news .new-row .label {
+        margin: 10px auto;
+    }
+
+}
+
+/* End News Widget */
+/* Start Tasks Widget */
+.tasks {}
+
+.tasks .task-row:not(:last-of-type) {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.tasks .task-row .info {
+    flex: 1;
+}
+
+.tasks .task-row .delete:hover {
+    cursor: pointer;
+    color: red;
+    transition: 0.3s;
+}
+
+.tasks .done {
+    opacity: 0.3;
+}
+
+.tasks .done h3,
+.tasks .done p {
+    text-decoration: line-through;
+}
+
+/* End Tasks Widget */
 /* End Wrapper */
