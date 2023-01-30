@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Dashboard</title>
+    <!-- Render All Element Normally -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- My Frame Work -->
+    <link rel="stylesheet" href="css/framwork.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- Main Template Css File  -->
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,500;0,700;1,300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="page d-flex">
+      <!-- Start sidebar -->
+      <div class="sidebar bg-white p-20 p-relative">
+        <h3 class="p-relative txt-c mt-0">Mohamed Anas</h3>
+        <ul>
+          <li>
+            <a
+              class="active d-flex align-c p-10 rad-6 fs-14 c-black"
+              href="index.html"
+            >
+              <i class="fa-solid fa-chart-bar fa-fw"></i>
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="d-flex align-c p-10 rad-6 fs-14 c-black"
+              href="index.html"
+            >
+              <i class="fa-solid fa-gear fa-fw"></i>
+              <span>Settings</span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="d-flex align-c p-10 rad-6 fs-14 c-black"
+              href="index.html"
+            >
+              <i class="fa-regular fa-user fa-fw"></i>
+              <span>Profile</span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="d-flex align-c p-10 rad-6 fs-14 c-black"
+              href="index.html"
+            >
+              <i class="fa-solid fa-diagram-project fa-fw"></i>
+              <span>Projects</span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="d-flex align-c p-10 rad-6 fs-14 c-black"
+              href="index.html"
+            >
+              <i class="fa-solid fa-graduation-cap fa-fw"></i>
+              <span>Courses</span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="d-flex align-c p-10 rad-6 fs-14 c-black"
+              href="index.html"
+            >
+              <i class="fa-regular fa-circle-user fa-fw"></i>
+              <span>Froends</span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="d-flex align-c p-10 rad-6 fs-14 c-black"
+              href="index.html"
+            >
+              <i class="fa-regular fa-file fa-fw"></i> <span>Files</span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="d-flex align-c p-10 rad-6 fs-14 c-black"
+              href="index.html"
+            >
+              <i class="fa-regular fa-credit-card fa-fw"></i> <span>Plans</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- End sidebar -->
+      <div class="content w-full">
+        <!-- Start Header -->
+        <div class="header p-15 bg-white between-flex">
+          <div class="search p-relative">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input class="p-10" type="search" placeholder="Type A Keyword" />
+          </div>
+          <div class="icons d-flex align-c">
+            <span class="notification p-relative">
+              <i class="fa-regular fa-bell fa-lg"></i>
+            </span>
+            <img src="imgs/avatar.png" alt="" />
+          </div>
+        </div>
+        <!-- End Header -->
+        <h1 class="p-relative">Dashboard</h1>
+        <div class="wrapper d-grid gap-20">
+          <div class="welcome bg-white rad-10 txt-c-mobile block-mobile">
+            <div class="intro">
+              <div>
+                <h2>Welcome</h2>
+                <p>Anas</p>
+              </div>
+              <img src="imgs/welcome.png" alt="" />
+            </div>
+            <img class="avatar" src="imgs/avatar.png" alt="" />
+            <div class="body">
+              <div>
+                Mohamed Anas
+                <span>Developer</span>
+              </div>
+              <div>
+                80
+                <span>Project</span>
+              </div>
+              <div>
+                $8500
+                <span>Earned</span>
+              </div>
+            </div>
+            <a href="#profile.html" class="visit shape-btn">Profile</a>
+          </div>
+          <div class="draft bg-white p-20 rad-10">
+            <div>
+              <h2 class="mt-0 mb-10">Quick Draft</h2>
+              <p class="fs-15 c-grey mt-0">Write A Draft For Your Ideas</p>
+            </div>
+            <form class="d-flex flex-d">
+              <input
+                class="mb-20 p-10 bg-eee rad-6 b-none fs-13"
+                type="text"
+                placeholder="Title"
+              />
+              <textarea
+                class="mb-20 p-10 bg-eee rad-6 b-none fs-13"
+                placeholder="Your Thought"
+              ></textarea>
+              <input class="save shape-btn" type="submit" value="Save" />
+            </form>
+          </div>
+          <!-- Start Target Widget -->
+          <div class="target bg-white p-20 rad-10">
+            <h2 class="mt-0 mb-10">Yearly Targets</h2>
+            <p class="mt-0 mb-20 c-grey fs-15">Targets Of The Year</p>
+            <div class="target-row mb-20 d-flex align-c blue">
+              <div class="icon center-flex bg-blue">
+                <i class="fa-solid fa-dollar-sign fa-lg c-blue"></i>
+              </div>
+              <div class="details w-full">
+                <h3 class="c-grey fs-14 mt-0 mb-0">Money</h3>
+                <p class="fw-bold mt-5 mb-10">$50.000</p>
+                <div class="grogress bg-blue">
+                  <span class="progress-color blue" style="width: 80%">
+                    <span class="bg-blue">80%</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="target-row mb-20 d-flex align-c orange">
+              <div class="icon center-flex bg-orange">
+                <i class="fa-solid fa-code fa-lg c-orange"></i>
+              </div>
+              <div class="details w-full">
+                <h3 class="c-grey fs-14 mt-0 mb-0">Progect</h3>
+                <p class="fw-bold mt-5 mb-10">24</p>
+                <div class="grogress bg-orange">
+                  <span class="progress-color orange" style="width: 55%">
+                    <span class="bg-orange">55%</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="target-row d-flex align-c green">
+              <div class="icon center-flex bg-green">
+                <i class="fa-solid fa-user fa-lg c-green"></i>
+              </div>
+              <div class="details w-full">
+                <h3 class="c-grey fs-14 mt-0 mb-0">Team</h3>
+                <p class="fw-bold mt-5 mb-10">12</p>
+                <div class="grogress bg-green">
+                  <span class="progress-color green" style="width: 75%">
+                    <span class="bg-green">75%</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Target Widget -->
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
