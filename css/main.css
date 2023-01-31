@@ -140,8 +140,6 @@ body {
     overflow: hidden;
 }
 
-/* .content .header {} */
-
 .content .header .search i {
     color: var(--grey-color);
     position: absolute;
@@ -288,6 +286,11 @@ body {
     font-size: 14px;
 }
 
+.welcome .visit {
+    transform: 0.3s;
+    margin: 0 15px 15px auto;
+}
+
 .welcome .visit:hover {
     background-color: var(--blue-alt-color);
 }
@@ -318,8 +321,8 @@ body {
 }
 
 .draft form .save {
-    margin-right: 0;
-    margin-bottom: 0;
+    margin-left: auto;
+    cursor: pointer;
 }
 
 .draft form .save:hover {
@@ -415,7 +418,7 @@ body {
 /* End Target Widget */
 
 /* Start Tickets widget */
-.tickets .boxs {}
+/* .tickets .boxs {} */
 
 .tickets .boxs .box {
     width: calc(50% - 10px);
@@ -470,7 +473,6 @@ body {
 
 /* End News Widget */
 /* Start Tasks Widget */
-.tasks {}
 
 .tasks .task-row:not(:last-of-type) {
     margin-bottom: 15px;
@@ -498,4 +500,211 @@ body {
 }
 
 /* End Tasks Widget */
+/* Start Latest Upload Widget */
+.latest-upload img {
+    width: 40px;
+    height: 40px;
+}
+
+.latest-upload ul li:not(:last-of-type) {
+    border-bottom: 1px solid #eee;
+}
+
+/* End Latest Upload Widget */
+
+/* Start Last Project Widget */
+.last-project ul::before {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 95%;
+    background-color: var(--blue-color);
+    left: 11px;
+}
+
+.last-project ul li::before {
+    content: "";
+    padding: 10px;
+    border-radius: 50%;
+    background-color: white;
+    border: 2px solid white;
+    outline: 2px solid var(--blue-color);
+    margin-right: 15px;
+    z-index: 1;
+}
+
+.last-project ul .done::before {
+    background-color: var(--blue-color);
+}
+
+.last-project ul .current::before {
+    animation: change-color 0.8s infinite alternate;
+}
+
+.last-project img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 160px;
+    opacity: 0.1;
+}
+
+/* End Last Project Widget */
+/* Start Reminders Widget */
+.reminders ul li>span {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.reminders ul li .blue {
+    border-left: 2px solid var(--blue-color);
+}
+
+.reminders ul li .green {
+    border-left: 2px solid var(--green-color);
+}
+
+.reminders ul li .orange {
+    border-left: 2px solid var(--orange-color);
+}
+
+.reminders ul li .red {
+    border-left: 2px solid var(--red-color);
+}
+
+/* End Reminders Widget */
+
+/* Start Latest Post */
+.latest-post .avatar {
+    width: 48px;
+    height: 48px;
+}
+
+.latest-post .post-content {
+    min-height: 140px;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    line-height: 1.8;
+    text-transform: capitalize;
+}
+
+/* End Latest Post */
+
+.social-media i,
+.social-media img {
+    position: absolute;
+    width: 52px;
+    color: white;
+    left: 0;
+    transition: 0.3s;
+}
+
+.social-media img {
+    padding: 8px 5px 5px 5px;
+}
+
+.social-media i:hover {
+    transform: rotate(5deg);
+}
+
+.social-media span {
+    padding-left: 70px;
+}
+
+.social-media .github {
+    background-color: rgb(51 51 51 / 20%);
+    color: #333;
+}
+
+.social-media .github i,
+.social-media .github a {
+    background-color: #333;
+}
+
+.social-media .facebook {
+    background-color: rgb(24 119 242 / 20%);
+    color: #1da1f2;
+}
+
+.social-media .facebook i,
+.social-media .facebook a {
+    background-color: #1877f2;
+}
+
+.social-media .freelancer {
+    color: black;
+    background-color: rgb(0 0 0 / 20%);
+}
+
+.social-media .freelancer img,
+.social-media .freelancer a {
+    background-color: black;
+}
+
+.social-media .linked-in {
+    background-color: rgb(0 119 181 / 20%);
+    color: #1da1f2;
+}
+
+.social-media .linked-in i,
+.social-media .linked-in a {
+    background-color: #0077b5;
+}
+
+/* Start Project Table */
+.projects table {
+    border-spacing: 0;
+    width: 100%;
+    min-width: 1000px;
+}
+
+.projects .responsive-table {
+    overflow-x: auto;
+}
+
+.projects table thead {
+    background-color: #eee;
+    font-weight: bold;
+}
+
+.projects table tr td {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    border-left: 1px solid #eee;
+    transition: 0.3s;
+}
+
+.projects table tbody tr:hover td {
+    background-color: #faf7f7;
+}
+
+.projects table tr td img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    padding: 2px;
+    background-color: white;
+}
+
+.projects table tr td img:not(:first-child) {
+    margin-left: -20px;
+}
+
+/* End Project Table */
+
 /* End Wrapper */
+
+/* Start Animation */
+@keyframes change-color {
+    form {
+        background-color: white;
+    }
+
+    to {
+        background-color: var(--blue-color);
+    }
+}
+
+/* End Animation */
