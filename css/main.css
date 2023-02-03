@@ -974,6 +974,10 @@ body {
 }
 
 @media(max-width:767px) {
+    .profile-page {
+        margin: 10px;
+    }
+
     .profile-page .overview {
         flex-direction: column;
     }
@@ -1029,6 +1033,7 @@ body {
 @media(max-width:767px) {
     .profile-page .other-data {
         flex-direction: column;
+        margin-top: 10px;
     }
 
     .profile-page .other-data .my-skills {
@@ -1055,6 +1060,218 @@ body {
 
 /* End Profile Page */
 
+/* Start Project Page */
+
+.projects-page {
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+}
+
+.projects-page .date-project {
+    text-align: right;
+}
+
+.projects-page .team {
+    position: relative;
+    min-height: 80px;
+}
+
+.projects-page .team a {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.projects-page .team a:nth-child(2) {
+    margin-left: 25px;
+}
+
+.projects-page .team a:nth-child(3) {
+    margin-left: 50px;
+}
+
+.projects-page .team a:nth-child(4) {
+    margin-left: 75px;
+}
+
+.projects-page .team a:nth-child(5) {
+    margin-left: 100px;
+}
+
+.projects-page .team a:hover {
+    z-index: 1000;
+}
+
+.projects-page .team img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.projects-page .do {
+    justify-content: flex-end;
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+}
+
+.projects-page .do span {
+    padding: 3px 8px;
+    background-color: #eee;
+    margin-left: 5px;
+    border-radius: 6px;
+    font-size: 13px;
+}
+
+.projects-page .info {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+    justify-content: space-between;
+}
+
+.projects-page .info .prog {
+    height: 8px;
+    width: 260px;
+    position: relative;
+    border-radius: 6px;
+}
+
+.projects-page .info .prog span {
+    position: absolute;
+    height: 100%;
+    border-radius: 6px;
+}
+
+@media(max-width:767px) {
+    .projects-page {
+        grid-template-columns: minmax(200px, 1fr);
+        gap: 10px;
+        margin: 10px;
+    }
+
+    .projects-page .do {
+        flex-direction: column;
+    }
+
+    .projects-page .do span {
+        width: fit-content;
+        margin-bottom: 15px;
+    }
+
+    .projects-page .info {
+        flex-direction: column;
+    }
+
+    .projects-page .info .prog {
+        margin-bottom: 15px;
+    }
+}
+
+/* End Project Page */
+
+/* Start Courses Page */
+.courses-page {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.courses-page .course {
+    overflow: hidden;
+}
+
+.courses-page .course .instructor {
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    top: 20px;
+    left: 20px;
+    border: 2px solid white;
+}
+
+.courses-page .course>div {
+    border-bottom: 1px solid #eee;
+}
+
+.courses-page .course>div>p {
+    line-height: 1.8;
+}
+
+.courses-page .course .info span:nth-child(1) {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@media(max-width:767px) {
+    .courses-page {
+        grid-template-columns: minmax(200px, 1fr);
+        gap: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+/* End Courses Page */
+
+/* Start Frinds Page */
+.friends-page {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    margin: 20px;
+}
+
+
+.friends-page .friend .contact {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.friends-page .friend .contact i {
+    padding: 10px;
+    background-color: #eee;
+    border-radius: 50%;
+    color: #666;
+    font-size: 13px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.friends-page .friend .contact i:hover {
+    background-color: var(--blue-color);
+    color: white;
+}
+
+.friends-page .friend .icons {
+    font-size: 14px;
+    margin: 15px 0;
+    padding: 15px 0;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+.friends-page .friend .icons div:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.friends-page .friend .icons div i {
+    margin-right: 5px;
+}
+
+.friends-page .friend .icons .vip {
+    position: absolute;
+    right: 0;
+    bottom: 50%;
+    transform: translateY(50%);
+    color: var(--orange-color);
+    font-size: 40px;
+    font-weight: 700;
+    opacity: 0.2;
+}
+
+/* End Frinds Page */
 
 /* Start Animation */
 @keyframes change-color {

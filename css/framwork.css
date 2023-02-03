@@ -124,6 +124,10 @@
     border: 1px solid #ccc;
 }
 
+.rad-half {
+    border-radius: 50%;
+}
+
 /* End Color */
 
 /* Start Padding And Margin */
@@ -185,6 +189,10 @@
 
 .mt-5 {
     margin-top: 5px;
+}
+
+.mt-10 {
+    margin-top: 10px;
 }
 
 .mt-15 {
@@ -266,6 +274,10 @@
     font-weight: bold;
 }
 
+.fw-normal {
+    font-weight: normal;
+}
+
 @media(max-width:767px) {
     .txt-c-mobile {
         text-align: center;
@@ -302,6 +314,14 @@
     height: 100%;
 }
 
+.w-100 {
+    width: 100px;
+}
+
+.h-100 {
+    height: 100px;
+}
+
 /* End Width And HEight */
 
 /* Start Component */
@@ -320,7 +340,6 @@
 .btn-shape {
     padding: 4px 10px;
     border-radius: 6px;
-    display: block;
     width: fit-content;
     transition: 0.3s;
     border: none;
