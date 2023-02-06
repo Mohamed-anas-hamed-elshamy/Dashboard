@@ -876,10 +876,10 @@ body {
     transform: scale(0);
     content: "";
     position: absolute;
-    left: 4.8px;
-    top: 3px;
-    width: 12px;
-    height: 12px;
+    left: 5.8px;
+    top: 3.1px;
+    width: 11.5px;
+    height: 11.5px;
     background: var(--blue-color);
     border-radius: 50%;
     transition: 0.3s;
@@ -927,6 +927,13 @@ body {
 }
 
 /* End Backup Manager */
+@media(max-width:767px) {
+    .settings-page {
+        gap: 10px;
+        margin: 10px;
+    }
+}
+
 
 /* End Settings Page */
 
@@ -1280,6 +1287,8 @@ body {
     }
 }
 
+/* End Frinds Page */
+
 /* Start File Page */
 
 .file-page {
@@ -1348,9 +1357,89 @@ body {
     animation: up-down 1s infinite;
 }
 
+@media(max-width:767px) {
+    .file-page {
+        margin: 10px;
+        gap: 10px;
+        flex-direction: column-reverse;
+        align-items: unset;
+    }
+
+    .file-page .file-stats {
+        width: unset;
+    }
+
+    .file-page .file-cards {
+        gap: 10px;
+    }
+
+}
+
 /* End File Page */
 
-/* End Frinds Page */
+/* Start Plans Page */
+.plans-page {
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    gap: 20px;
+}
+
+.plans-page .plan.green .top {
+    border: 3px solid white;
+    outline: 3px solid var(--green-color);
+}
+
+.plans-page .plan.blue .top {
+    border: 3px solid white;
+    outline: 3px solid var(--blue-color);
+}
+
+.plans-page .plan.orange .top {
+    border: 3px solid white;
+    outline: 3px solid var(--orange-color);
+}
+
+.plans-page .plan .price {
+    font-size: 40px;
+    color: white;
+    margin: auto;
+}
+
+.plans-page .plan .price span {
+    position: absolute;
+    top: 0;
+    font-size: 25px;
+    left: -20px;
+}
+
+.plans-page .plan ul li {
+    padding: 15px 0;
+    font-size: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.plans-page .plan ul li span {
+    margin-left: 10px;
+}
+
+.plans-page .plan ul li i:nth-child(:first-child) {
+    font-size: 18px;
+}
+
+.plans-page .plan ul li .help {
+    margin-left: auto;
+    cursor: pointer;
+}
+
+@media(max-width:767px) {
+    .plans-page {
+        grid-template-columns: minmax(250px, 1fr);
+        gap: 10px;
+        margin: 10px
+    }
+
+}
+
+/* End Plans Page */
 
 /* Start Animation */
 @keyframes change-color {
