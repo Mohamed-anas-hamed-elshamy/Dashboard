@@ -124,6 +124,14 @@
     border: 1px solid #ccc;
 }
 
+.border-eee {
+    border: 1px solid #eee;
+}
+
+.border-top-eee {
+    border-top: 1px solid #eee;
+}
+
 .rad-half {
     border-radius: 50%;
 }
@@ -245,6 +253,10 @@
 /* Start Position */
 .p-relative {
     position: relative;
+}
+
+.p-absolute {
+    position: absolute;
 }
 
 /* End Position */
